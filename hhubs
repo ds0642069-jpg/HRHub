@@ -1,1 +1,77 @@
-print("Hello, world!");
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "Hyper Library",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local maintab = win:Tab('Main')
+local uitab = win:Tab('UI')
+
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
+
+maintab:Button('local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "Hyper Library",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local maintab = win:Tab('Main')
+local uitab = win:Tab('UI')
+
+-- UI Tab
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
+
+-- Main Tab
+maintab:Button('Tp To End', function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local root = character:WaitForChild("HumanoidRootPart")
+    root.CFrame = CFrame.new(7980, 205, 481)
+end)
+
+-- Main Tab
+maintab:Button('Tp To End World 2', function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local root = character:WaitForChild("HumanoidRootPart")
+    root.CFrame = CFrame.new(4476, 2, 0)
+end)
+
+-- Auto Farm
+_G.AutoFarm = false
+
+maintab:Toggle('Auto Farm', function(state)
+    _G.AutoFarm = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoFarm do
+                pcall(function()
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Modules", 1)
+                        :WaitForChild("Shared", 1)
+                        :WaitForChild("RemoteEventService", 1)
+                        :WaitForChild("AddSpeedRemoteEvent", 1)
+                        :FireServer()
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)', function()
+
+end)
