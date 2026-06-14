@@ -1,0 +1,509 @@
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "Hyper Library",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local Main = win:Tab('Main')
+local World1tab = win:Tab('World1')
+local World2tab = win:Tab('World2')
+local Eggtab = win:Tab('Egg')
+local uitab = win:Tab('UI')
+
+-- UI Tab
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
+
+-- Main Tab
+Eggtab:Button('Click Only ONCE', function()
+local args = {"Egg_Season_2", "LuckDragon"}
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("EggHatchService"):WaitForChild("RE"):WaitForChild("AutoDeletePet"):FireServer(unpack(args))
+
+local args = {"Egg_Season_2", "LuckDominus"}
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("EggHatchService"):WaitForChild("RE"):WaitForChild("AutoDeletePet"):FireServer(unpack(args))
+
+local args = {"Egg_Season_2", "LuckyKoala"}
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("EggHatchService"):WaitForChild("RE"):WaitForChild("AutoDeletePet"):FireServer(unpack(args))
+
+local args = {"Egg_Season_2", "LuckDoggy"}
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("EggHatchService"):WaitForChild("RE"):WaitForChild("AutoDeletePet"):FireServer(unpack(args))
+end)
+
+Main:Button('Inf Gems', function()
+    game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.5.1"].knit.Services.RandomPotionService.RE.BuyPotionEvent:FireServer(-1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e70)
+end)
+
+Main:Button('Inf Eggs', function()
+    local args = {
+	"87fae7ff-6ec9-4951-b5ae-396903b62fbd",
+	-1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e70
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TitanService"):WaitForChild("RE"):WaitForChild("AccelerateCraft"):FireServer(unpack(args))
+end)
+
+-- Auto Farm
+_G.AutoFarm = false
+
+Main:Toggle('Auto Crowns', function(state)
+    _G.AutoFarm = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoFarm do
+                pcall(function()
+                    local args = {
+                        "WinGate_16",
+                        vector.create(1804.504150390625, 780.9268188476562, -170382.65625)
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("FightService")
+                        :WaitForChild("RE")
+                        :WaitForChild("GetWinsEvent")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train1', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_1"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train2', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_2"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train3', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_3"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train4', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_4"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train5', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_5"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train6', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_6"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- Auto Train
+_G.AutoTrain = false
+
+World1tab:Toggle('Auto Train7', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_1_7"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+-- AutoEgg
+_G.AutoHatch = false
+
+Eggtab:Toggle('AutoHatch Season 2', function(state)
+    _G.AutoHatch = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoHatch do
+                pcall(function()
+                    local args = {
+                        "Egg_Season_2",
+                        1
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("EggHatchService")
+                        :WaitForChild("RE")
+                        :WaitForChild("Hatch")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train1', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_1"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train2', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_2"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train3', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_3"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train4', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_4"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train5', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_5"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train6', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_6"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
+
+World2tab:Toggle('Auto Train7', function(state)
+    _G.AutoTrain = state
+    
+    if state then
+        task.spawn(function()
+            while _G.AutoTrain do
+                pcall(function()
+                    local args = {
+                        "Treadmill_2_7"
+                    }
+                    game:GetService("ReplicatedStorage")
+                        :WaitForChild("Packages")
+                        :WaitForChild("_Index")
+                        :WaitForChild("sleitnick_knit@1.5.1")
+                        :WaitForChild("knit")
+                        :WaitForChild("Services")
+                        :WaitForChild("TrainService")
+                        :WaitForChild("RE")
+                        :WaitForChild("RunTrain")
+                        :FireServer(unpack(args))
+                end)
+                task.wait()
+            end
+        end)
+    end
+end)
